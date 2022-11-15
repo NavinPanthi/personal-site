@@ -1,1 +1,7 @@
-mylogs.log
+/mylogs.log
+*.log
+*.txt
+*.cpp
+ignore/
+the slace above at begining of mylogs.log files indicates to ignore all "mylogs.log" file if
+ it is in same direcory with ".gitignore".
