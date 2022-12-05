@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fourth sem</title>
 </head>
 <body>
     <p> a link to my fav website <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" 
@@ -16,5 +16,81 @@
 
         <p><a href="something">Download the sales report(PDF,10MB)</a></p>
         <p><a href="https://www.mozilla.org/en-US/firefox/new/" download="https://www.mozilla.org/firefox/download/thanks/">download firefox</a></p>
+
+        <h1> Lists </h1>
+        <ul type="circle">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Adress</li>
+        </ul>
+        
+
+
+
+        <h1>Form</h1>
+
+        <form class="one" action="/action_page.php" method = "post" target="_parent" autocomplete="on" novalidate>
+        <label for="fname">First name: </label> <br>
+        <input type="text" id="fname" name="fname"> <br>
+        <label for="lname">Last name: </label> 
+        <input type="text" name="lname" id="fname" value="Panthi"> 
+        
+        
+        <input type="submit" name="submit">
+        <br> <br> <br>
+
+        <!--Name should be same in radio inputs-->
+        <input type="radio" name="fav_language" id="html" value="HTML">
+        <label for="html">HTML</label> <br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label> <br>
+        
+        <input type="checkbox" name="fav_food" id="html" value="HTML">
+        <label for="html">HTML</label> <br>
+        <input type="checkbox" id="css" name="fav_food" value="CSS">
+        <label for="css">CSS</label> <br>
+
+        <label for="cars">Choose car.</label>
+        <select name="cars" id="cars" size="0" multiple>
+            <option value="Royalsroyace">RR</option>
+            <option value="GYpsy">GYpsy</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lambo">Lambo</option>
+        </select>
+
+        <textarea name="NameOfPerson" id="names" cols="30" rows="5"></textarea>
+            <input type="submit" name="names">
+
+            <br><hr>
+            <fieldset style="width:40%;">
+                <legend>Your contact:</legend>
+                <label for="fname">First name: </label> <br>
+                <input type="text" id="fname" name="fname" size="2" ><br> 
+                <label for="lname">Last name: </label> <br>
+                <input type="text" name="lname" id=lname"" ><br> <br>
+    
+                <input type="submit" value="submit">
+            </fieldset>
+
+            <br><hr>
+            <button type="button" onclick="alert('Not available')">CLick</button>
+
+            <br><hr>
+            <label for="pwd">Password: </label>
+            <input type="password" id="pwd" name="pwd" required>
+            <input type="submit" value="Finish">
+            <input type="reset" value="Reset">
+
+            <br><hr>
+            <label for="birthday">Birthday: </label>
+            <input type="date" id="birthday" name="birthday">
+                
+            
+            <br><hr>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+        </form>
 </body>
 </html>
