@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 500px;
+            height: 1400px;
+            margin: 10% auto;
+        }
+        .container{
+            position: relative;
+            background-color: aquamarine;
+            width: 400px;
+            height:200px;
+            border: 1px solid cornflowerblue;
+        }
+        .absolute{
+            position: absolute;
+            background-color: bisque;
+            width: 200px;
+            height: 100px;
+            border: 1px solid blueviolet;
+            top:80px;
+            right: 0;
+        }
+        h1{
+  position: sticky;
+  top: 0;
+  width: 500px;
+  margin-top: 0;
+  background: white;
+  padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        I am relative.
+    <div class="absolute">I am absolute.</div>
+    </div>
+    <h1>Okay.</h1>
+</body>
+</html>
