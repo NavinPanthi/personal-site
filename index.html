@@ -1,49 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>My test page</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Portfolio</title>
     <link
-      href="http://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
-      type="text/css"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
-    <h1>Mozilla is cool</h1>
-    <img
-      src="images/firefox-icon.png"
-      alt="The Firefox logo: a flaming fox surrounding the Earth."
-    />
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>BPP</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="#"><i class="uil uil-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="uil uil-user-circle"></i>About</a>
+          </li>
+          <li>
+            <a href="#"><i class="uil uil-graduation-cap"></i>Skills</a>
+          </li>
+          <li>
+            <a href="#"><i class="uil uil-briefcase"></i>Services</a>
+          </li>
+          <li>
+            <a href="#"> <i class="uil uil-scenery"></i>Portfolio</a>
+          </li>
+          <li>
+            <a href="#"> <i class="uil uil-message"></i>Contact</a>
+          </li>
+        </ul>
 
-    <p>At Mozilla, we’re a global community of</p>
+        <div class="header-form">
+          <form action="" class="search-class">
+            <input type="text" name="q" id="search" placeholder="Search" />
+          </form>
+        </div>
 
-    <ul>
-      <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+        <div class="header-button">
+          <button class="dark-mode" onclick="darkmode()">
+            <i class="uil uil-moon"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-    <p>
-      working together to keep the Internet alive and accessible, so people
-      worldwide can be informed contributors and creators of the Web. We believe
-      this act of human collaboration across an open platform is essential to
-      individual growth and our collective future.
-    </p>
+    <main>
+      <section>
+        <article class="main-page">
+            <div class="main-page-content">
+              <h2>Bed Prakash Panthi</h2>
+              <h3>Web developer</h3>
+              <br />
+              <p>
+                Entry level developer with good design and development knowledge
+                producing quality work espcialized with .net framework.
+              </p>
+            </div>
+            <div class="main-page-img">
+              <img
+                class="image person"
+                src="assets/images/person.png"
+                alt="person"
+              />
+            </div>
 
-    <p>
-      Read the
-      <a href="https://www.mozilla.org/en-US/about/manifesto/"
-        >Mozilla Manifesto</a
-      >
-      to learn even more about the values and principles that guide the pursuit
-      of our mission.
-    </p>
-    <button>Change user.</button>
+        </article>
 
-    <script src="scripts/index.js"></script>
+        <article class="about-page">
+          <h3>About me</h3>
+          <p class="p-about-page">
+            Web developer with good experience of above one year, active in
+            learning web technologies and UI/UX design.
+          </p>
+        </article>
+
+        <article class="skills-page">
+          <h3>Skills</h3>
+          <section class="frontend-section">
+            <h4>Front end developer</h4>
+            <h5>Above 1 year</h5>
+
+            <table>
+              <tr>
+                <td>HTML</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>70%</td>
+              </tr>
+              <tr>
+                <td>JS</td>
+                <td>50%</td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="ui/ux-section">
+            <h4>UI/UX designer</h4>
+            <h5>Above 6 months</h5>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Figma</td>
+                  <td>80%</td>
+                </tr>
+
+                <tr>
+                  <td>Adobe XD</td>
+                  <td>30%</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="backend-section">
+            <h4>Backend developer</h4>
+            <h5>Above 1 year</h5>
+            <table>
+              <tr>
+                <td>Java</td>
+                <td>50%</td>
+              </tr>
+
+              <tr>
+                <td>C#</td>
+                <td>50%</td>
+              </tr>
+
+              <tr>
+                <td>.net framework</td>
+                <td>50%</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+
+        <article class="services-page">
+          <h3>About me</h3>
+          <p class="p-about-page">
+            Web developer with good experience of above one year, active in
+            learning web technologies and UI/UX design.
+          </p>
+        </article>
+
+        <article class="portfolio-page">
+          <h3>About me</h3>
+          <p class="p-about-page">
+            Web developer with good experience of above one year, active in
+            learning web technologies and UI/UX design.
+          </p>
+        </article>
+
+        <article class="contact-page">
+          <h3>Contact</h3>
+          <section class="contact-section">
+            <ul>
+              <li>
+                call me <br />
+                9815463224
+              </li>
+              <li>
+                Email <br />
+                panthinabin341@gmail.com
+              </li>
+              <li>
+                Location <br />
+                Pokhara-Jumleti, Nepal
+              </li>
+            </ul>
+          </section>
+
+          <section class="form-section">
+            <form
+              class="one"
+              action="/action.php"
+              target="_self"
+              autocomplete="on"
+              validate
+            >
+              <div class="form-name">
+                <label for="name" class="name-label">Name</label> <br />
+                <input type="text" id="name" name="name" />
+              </div>
+
+              <div class="form-email">
+                <label for="email" class="email-label">Email</label> <br />
+                <input type="text" name="email" id="email" />
+              </div>
+
+              <div class="form-project">
+                <label for="project" class="project-label">Project</label>
+                <br />
+                <input type="text" name="project" id="project" />
+              </div>
+
+              <label for="message" class="message-label">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </form>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="assets/scripts/main.js"></script>
   </body>
 </html>
-
