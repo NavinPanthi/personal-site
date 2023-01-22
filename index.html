@@ -10,32 +10,36 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <h1>BPP</h1>
+          <h2>NP</h2>
         </div>
         <ul>
           <li>
-            <a href="#"><i class="uil uil-home"></i>Home</a>
+            <a href="#ma"><i class="uil uil-home"></i>Home</a>
           </li>
           <li>
-            <a href="#"><i class="uil uil-user-circle"></i>About</a>
+            <a href="#ab"><i class="uil uil-user-circle"></i>About</a>
           </li>
           <li>
-            <a href="#"><i class="uil uil-graduation-cap"></i>Skills</a>
+            <a href="#sk"><i class="uil uil-graduation-cap"></i>Skills</a>
           </li>
           <li>
-            <a href="#"><i class="uil uil-briefcase"></i>Services</a>
+            <a href="#se"><i class="uil uil-briefcase"></i>Services</a>
           </li>
           <li>
-            <a href="#"> <i class="uil uil-scenery"></i>Portfolio</a>
+            <a href="#po"> <i class="uil uil-scenery"></i>Portfolio</a>
           </li>
           <li>
-            <a href="#"> <i class="uil uil-message"></i>Contact</a>
+            <a href="#co"> <i class="uil uil-message"></i>Contact</a>
           </li>
         </ul>
 
@@ -47,7 +51,7 @@
 
         <div class="header-button">
           <button class="dark-mode" onclick="darkmode()">
-            <i class="uil uil-moon"></i>
+            <i id="da" class="uil uil-moon" onclick="swapdarkmode()"></i>
           </button>
         </div>
       </nav>
@@ -55,169 +59,301 @@
 
     <main>
       <section>
-        <article class="main-page">
-            <div class="main-page-content">
-              <h2>Bed Prakash Panthi</h2>
-              <h3>Web developer</h3>
-              <br />
-              <p>
-                Entry level developer with good design and development knowledge
-                producing quality work espcialized with .net framework.
-              </p>
+        <article id="ma" class="main-page">
+          <div class="main-page-content">
+            <h2>Navin Panthi</h2>
+            <h3>Web developer</h3>
+            <br />
+            <p>
+              Entry level developer with good design and development knowledge
+              producing quality work espcialized with .net framework.
+            </p>
+            <div class="contact-div">
+              <a href="#" class="contact-me"
+                >Contact Me <i class="uil uil-message"></i
+              ></a>
             </div>
-            <div class="main-page-img">
+          </div>
+          <div class="main-page-img">
+            <a href="#" class="fa fa-github fa1"></a>
+            <a href="#" class="fa fa-linkedin fa1"></a>
+            <a href="#" class="fa fa-twitter fa1"></a>
+            <img class="image person" src="assets/images/p1.png" alt="person" />
+          </div>
+        </article>
+
+        <article id="ab" class="about-page">
+          <h3>About me</h3>
+          <div class="about-wrapper">
+            <div class="about-page-img">
               <img
-                class="image person"
+                class="image person2"
                 src="assets/images/person.png"
                 alt="person"
               />
             </div>
 
+            <div class="about-page-content">
+              <p class="p-about-page">
+                Web developer with good experience of above one year, active in
+                learning new web development technologies and UI/UX design.
+              </p>
+
+              <div class="box">
+                <div class="one">
+                  <h3>02+</h3>
+                  <br />
+                  Years <br />
+                  Experience
+                </div>
+                <div class="two">
+                  <h3>10+</h3>
+                  <br />
+                  Completed <br />
+                  Projects
+                </div>
+                <div class="three">
+                  <h3>03+</h3>
+                  <br />
+                  Companies <br />
+                  involved
+                </div>
+              </div>
+
+              <div class="downloadcv-div">
+                <a href="#" class="download-cv"
+                  >Download CV <i class="uil uil-message"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article class="about-page">
-          <h3>About me</h3>
-          <p class="p-about-page">
-            Web developer with good experience of above one year, active in
-            learning web technologies and UI/UX design.
-          </p>
-        </article>
-
-        <article class="skills-page">
+        <article id="sk" class="skills-page">
           <h3>Skills</h3>
-          <section class="frontend-section">
-            <h4>Front end developer</h4>
-            <h5>Above 1 year</h5>
-
-            <table>
-              <tr>
-                <td>HTML</td>
-                <td>80%</td>
-              </tr>
-              <tr>
-                <td>CSS</td>
-                <td>70%</td>
-              </tr>
-              <tr>
-                <td>JS</td>
-                <td>50%</td>
-              </tr>
-            </table>
-          </section>
-
-          <section class="ui/ux-section">
-            <h4>UI/UX designer</h4>
-            <h5>Above 6 months</h5>
-            <table>
-              <tbody>
+          <div class="skills-container">
+            <section class="frontend-section">
+              <div class="frontend-heading" onclick="showHideFrontend()">
+                <i class="uil uil-brackets-curly"></i>
+                <div>
+                  <h4>Front end developer</h4>
+                  <h5>Above 1 year</h5>
+                </div>
+              </div>
+              <table>
                 <tr>
-                  <td>Figma</td>
+                  <td>HTML</td>
                   <td>80%</td>
                 </tr>
+                <tr>
+                  <td>CSS</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                  <td>JS</td>
+                  <td>50%</td>
+                </tr>
+              </table>
+            </section>
+
+            <section class="ui_ux-section">
+              <div class="ui_ux-heading" onclick="showHideui_ux()">
+                <div>
+                  <h4>UI/UX designer</h4>
+                  <h5>Above 6 months</h5>
+                </div>
+              </div>
+              <table class="hide">
+                <tbody>
+                  <tr>
+                    <td>Figma</td>
+                    <td>80%</td>
+                  </tr>
+                  <tr>
+                    <td>Adobe XD</td>
+                    <td>30%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section class="backend-section">
+              <div class="backend-heading" onclick="showHideBackend()">
+                <div>
+                  <h4>Backend developer</h4>
+                  <h5>Above 1 year</h5>
+                </div>
+              </div>
+              <table class="hide">
+                <tr>
+                  <td>Java</td>
+                  <td>50%</td>
+                </tr>
 
                 <tr>
-                  <td>Adobe XD</td>
-                  <td>30%</td>
+                  <td>C#</td>
+                  <td>50%</td>
                 </tr>
-              </tbody>
-            </table>
-          </section>
 
-          <section class="backend-section">
-            <h4>Backend developer</h4>
-            <h5>Above 1 year</h5>
-            <table>
-              <tr>
-                <td>Java</td>
-                <td>50%</td>
-              </tr>
-
-              <tr>
-                <td>C#</td>
-                <td>50%</td>
-              </tr>
-
-              <tr>
-                <td>.net framework</td>
-                <td>50%</td>
-              </tr>
-            </table>
-          </section>
+                <tr>
+                  <td>.net framework</td>
+                  <td>50%</td>
+                </tr>
+              </table>
+            </section>
+          </div>
         </article>
 
-        <article class="services-page">
-          <h3>About me</h3>
-          <p class="p-about-page">
-            Web developer with good experience of above one year, active in
-            learning web technologies and UI/UX design.
-          </p>
+        <article id="se" class="services-page">
+          <h3>Services</h3>
+          <div class="services-wrapper">
+            <div class="fdeveloper">
+              <h4>
+                Front-end <br />
+                Developer
+              </h4>
+              View more
+            </div>
+            <div class="fdeveloper">
+              <h4>
+                Front-end <br />
+                Developer
+              </h4>
+              View more
+            </div>
+            <div class="fdeveloper">
+              <h4>
+                Front-end <br />
+                Developer
+              </h4>
+              View more
+            </div>
+          </div>
         </article>
 
-        <article class="portfolio-page">
-          <h3>About me</h3>
-          <p class="p-about-page">
-            Web developer with good experience of above one year, active in
-            learning web technologies and UI/UX design.
-          </p>
+        <article id="po" class="portfolio-page">
+          <h3>Portfolio</h3>
+          <div class="portfolio-wrapper">
+            <div class="portfolio-page-img">
+              <img
+                class="image"
+                src="assets/images/portfolioi1.png"
+                alt="demo of developments"
+              />
+            </div>
+
+            <div class="portfolio-page-content">
+              <p class="p-portfolio-page">
+                Web developer with good experience of above one year, active in
+                learning new web development technologies and UI/UX design.
+              </p>
+
+              <div class="demo-of-developments">
+                <a href="#" class="demo"
+                  >Demo <i class="uil uil-message"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </article>
 
-        <article class="contact-page">
+        <article id="co" class="contact-page">
           <h3>Contact</h3>
-          <section class="contact-section">
+          <div class="contact-wrapper">
+            <section class="contact-section">
+              <ul>
+                <li>
+                  <h4>call me</h4>
+                  <br />
+                  9815463224
+                </li>
+                <li>
+                  <h4>Email</h4>
+                  <br />
+                  panthinabin341@gmail.com
+                </li>
+                <li>
+                  <h4>Location</h4>
+                  <br />
+                  Pokhara-Jumleti, Nepal
+                </li>
+              </ul>
+            </section>
+
+            <section class="form-section">
+              <form
+                class="one"
+                action="/action.php"
+                target="_self"
+                autocomplete="on"
+                validate
+              >
+                <div class="form-name">
+                  <label for="name" class="name-label">Name</label> <br />
+                  <input type="text" id="name" name="name" />
+                </div>
+
+                <div class="form-email">
+                  <label for="email" class="email-label">Email</label> <br />
+                  <input type="text" name="email" id="email" />
+                </div>
+
+                <div class="form-project">
+                  <label for="project" class="project-label">Project</label>
+                  <br />
+                  <input type="text" name="project" id="project" />
+                </div>
+
+                <div class="form-message">
+                  <label for="message" class="message-label">Message</label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </form>
+            </section>
+          </div>
+        </article>
+
+        <article class="footer">
+          <div class="heads">
+            <h3>Navin Panthi</h3>
+            <h5>Front end developer</h5>
+          </div>
+    
+          <div class="link">
             <ul>
               <li>
-                call me <br />
-                9815463224
+                <a href="#se">Services</a>
               </li>
               <li>
-                Email <br />
-                panthinabin341@gmail.com
+                <a href="#po"> Portfolio</a>
               </li>
               <li>
-                Location <br />
-                Pokhara-Jumleti, Nepal
+                <a href="#co"> Contact</a>
               </li>
             </ul>
-          </section>
-
-          <section class="form-section">
-            <form
-              class="one"
-              action="/action.php"
-              target="_self"
-              autocomplete="on"
-              validate
-            >
-              <div class="form-name">
-                <label for="name" class="name-label">Name</label> <br />
-                <input type="text" id="name" name="name" />
-              </div>
-
-              <div class="form-email">
-                <label for="email" class="email-label">Email</label> <br />
-                <input type="text" name="email" id="email" />
-              </div>
-
-              <div class="form-project">
-                <label for="project" class="project-label">Project</label>
-                <br />
-                <input type="text" name="project" id="project" />
-              </div>
-
-              <label for="message" class="message-label">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </form>
-          </section>
+          </div>
+    
+          <div class="logos">
+            <div>
+              <a href="#" class="fa fa-facebook"></a>
+            </div>
+            <div>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div>
+              <a href="#" class="fa fa-telegram"></a>
+            </div>
+          </div>
         </article>
       </section>
     </main>
 
-    <footer></footer>
+    
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>
