@@ -38,3 +38,35 @@ function showHideBackend() {
   backend.classList.toggle("hide");
   bshow = 1;
 }
+
+function swapbutton() {
+  if (document.getElementById("button").classList.contains("uil-angle-down")) {
+    document.getElementById("button").classList.add("uil-angle-up");
+    document.getElementById("button").classList.remove("uil-angle-down");
+  } else {
+    document.getElementById("button").classList.remove("uil-angle-up");
+    document.getElementById("button").classList.add("uil-angle-down");
+  }
+}
+
+function swapbutton1() {
+  if (document.getElementById("button2").classList.contains("uil-angle-down")) {
+    document.getElementById("button2").classList.add("uil-angle-up");
+    document.getElementById("button2").classList.remove("uil-angle-down");
+  } else {
+    document.getElementById("button2").classList.remove("uil-angle-up");
+    document.getElementById("button2").classList.add("uil-angle-down");
+  }
+}
+
+function swapbutton2() {
+  if (document.getElementById("button3").classList.contains("uil-angle-down")) {
+    document.getElementById("button3").classList.add("uil-angle-up");
+    document.getElementById("button3").classList.remove("uil-angle-down");
+  } else {
+    document.getElementById("button3").classList.remove("uil-angle-up");
+    document.getElementById("button3").classList.add("uil-angle-down");
+  }
+}
+
+

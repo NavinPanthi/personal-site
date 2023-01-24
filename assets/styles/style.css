@@ -1,4 +1,5 @@
 :root {
+
   --header-height: 3rem;
   --body-font: sans-serif;
 
@@ -373,10 +374,72 @@ article {
   padding: 0 10%;
 }
 .skills-container section {
-  border: 1px solid gainsboro;
+
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+.skills-page h5{
+  opacity: 0.6;
+}
+
+.skills-page table tr{
+position: relative;
+}
+
+.skills-container table{
+  border-collapse: collapse;
+  margin-right: 20%;
+}
+
+.border-bottom1,
+.border-bottom2,
+.border-bottom3,
+.border-bottom4,
+.border-bottom5{
+  border-bottom: 2px solid  hsl(250, 69%, 61%)  ;
+  position: absolute;
+  left:0;
+  right:20%;
+  display: inline-block;
+}
+
+.border-bottom11,
+.border-bottom22,
+.border-bottom33,
+.border-bottom44,
+.border-bottom55{
+  border-bottom: 2px solid black;
+  position: absolute;
+  right:0;
+  left:80%;
+  opacity: 0.2;
+  display: inline-block;
+}
+.border-bottom2{
+  right:30%;
+}
+.border-bottom22{
+  left:70%;
+}
+.border-bottom3{
+  right:50%;
+}
+.border-bottom33{
+  left:50%;
+}
+.border-bottom4{
+  right:50%;
+}
+.border-bottom44{
+  left:50%;
+}
+.border-bottom5{
+  right:50%;
+}
+.border-bottom55{
+  left:50%;
 }
 
 .frontend-heading,
@@ -388,14 +451,22 @@ article {
   align-items: center;
 }
 
+
 .hide {
   display: none;
 }
 
-.uil-brackets-curly {
+.uil-brackets-curly,.uil-layers-alt,.uil-server-alt{
   font-size: 2.4em;
   padding-right: 0.4em;
+  color:  hsl(250, 69%, 61%) ;
 }
+.uil-angle-down,.uil-angle-up{
+  font-size: 1.6em;
+  color:  hsl(250, 69%, 61%) ;
+  margin-left: 7em;
+}
+
 
 /*---------------SERVICES PAGE----------------*/
 
